@@ -55,6 +55,7 @@ def predict_page():
     return render_template("predict.html")
 
 
+
 # ==========================================
 # Prediction Result
 # ==========================================

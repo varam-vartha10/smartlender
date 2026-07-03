@@ -8,238 +8,178 @@
 
     <title>About | Smart Lender</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+<!-- ================= NAVBAR ================= -->
 
-    <nav>
+<nav>
 
-        <div class="logo">
+    <div class="logo-section">
 
-            <img src="{{ url_for('static', filename='images/logo.png') }}" width="55">
+        <img
+            class="logo"
+            src="{{ url_for('static', filename='images/logo.png') }}"
+            alt="Logo">
 
-            <h2>Smart Lender</h2>
-
-        </div>
-
-        <ul>
-
-            <li><a href="/">Home</a></li>
-
-            <li><a href="/predict">Predict</a></li>
-
-            <li><a href="/about">About</a></li>
-
-        </ul>
-
-    </nav>
-
-    <!-- Banner -->
-
-    <div class="banner">
-
-        <img src="{{ url_for('static', filename='images/banner.png') }}" alt="Smart Lender Banner">
+        <h2>Smart Lender</h2>
 
     </div>
 
-    <!-- Main Content -->
+    <ul>
 
-    <div class="container">
+        <li><a href="/">Home</a></li>
 
-        <h1>About Smart Lender</h1>
+        <li><a href="/predict">Loan Prediction</a></li>
 
-        <p>
+        <li><a href="/about" class="active">About</a></li>
 
-            <strong>Smart Lender</strong> is a Machine Learning based Loan Approval Prediction
-            System developed using <b>Python</b>, <b>Flask</b> and <b>Scikit-Learn</b>.
-            The application predicts whether a loan application will be
-            <b>Approved</b> or <b>Rejected</b> based on applicant information.
+    </ul>
 
-        </p>
+</nav>
 
-        <br>
+<!-- ================= ABOUT SECTION ================= -->
 
-        <h2>Project Objective</h2>
+<div class="container">
 
-        <p>
+    <h1>About Smart Lender</h1>
 
-            The objective of Smart Lender is to help banks and financial institutions
-            evaluate loan applications quickly and accurately using Machine Learning,
-            thereby reducing manual effort and improving decision-making.
+    <p class="about-text">
 
-        </p>
+        <strong>Smart Lender</strong> is an AI-powered Loan Approval Prediction
+        System developed using Machine Learning and Flask.
 
-        <br>
+        The application helps banks and financial institutions evaluate loan
+        applications quickly and accurately by analyzing applicant information
+        such as education, employment status, annual income, loan amount,
+        CIBIL score, and asset values.
 
-        <h2>Features</h2>
+    </p>
 
-        <ul class="feature-list">
+    <hr>
 
-            <li>Loan Approval Prediction</li>
+    <h2>Project Objective</h2>
 
-            <li>Real-time Prediction using Flask</li>
+    <p class="about-text">
 
-            <li>Machine Learning Based Decision Support</li>
+        The objective of this project is to automate the loan approval process
+        using Machine Learning models, helping financial organizations reduce
+        manual work, improve decision-making, and minimize the risk of loan
+        defaults.
 
-            <li>Fast and User Friendly Interface</li>
+    </p>
 
-            <li>Best Model Automatically Selected</li>
+    <hr>
 
-        </ul>
+    <h2>Technologies Used</h2>
 
-        <br>
+    <div class="card-container">
 
-        <h2>Technologies Used</h2>
+        <div class="small-card">🐍 Python</div>
 
-        <div class="tech-grid">
+        <div class="small-card">🌐 Flask</div>
 
-            <div class="card">Python</div>
+        <div class="small-card">📊 Pandas</div>
 
-            <div class="card">Flask</div>
+        <div class="small-card">🔢 NumPy</div>
 
-            <div class="card">Pandas</div>
+        <div class="small-card">📈 Matplotlib</div>
 
-            <div class="card">NumPy</div>
+        <div class="small-card">📉 Seaborn</div>
 
-            <div class="card">Scikit-Learn</div>
+        <div class="small-card">🤖 Scikit-Learn</div>
 
-            <div class="card">Matplotlib</div>
+        <div class="small-card">⚡ XGBoost</div>
 
-            <div class="card">Seaborn</div>
+        <div class="small-card">💻 HTML5</div>
 
-            <div class="card">XGBoost</div>
-
-            <div class="card">HTML5</div>
-
-            <div class="card">CSS3</div>
-
-        </div>
-
-        <br>
-
-        <h2>Machine Learning Models</h2>
-
-        <table>
-
-            <tr>
-
-                <th>Model</th>
-
-                <th>Status</th>
-
-            </tr>
-
-            <tr>
-
-                <td>Decision Tree</td>
-
-                <td>Implemented</td>
-
-            </tr>
-
-            <tr>
-
-                <td>Random Forest</td>
-
-                <td>Implemented</td>
-
-            </tr>
-
-            <tr>
-
-                <td>K-Nearest Neighbors (KNN)</td>
-
-                <td>Implemented</td>
-
-            </tr>
-
-            <tr>
-
-                <td>XGBoost</td>
-
-                <td><b>Best Performing Model</b></td>
-
-            </tr>
-
-        </table>
-
-        <br>
-
-        <h2>Project Workflow</h2>
-
-        <ol>
-
-            <li>Dataset Collection</li>
-
-            <li>Data Cleaning</li>
-
-            <li>Data Preprocessing</li>
-
-            <li>Feature Encoding</li>
-
-            <li>Feature Scaling</li>
-
-            <li>Model Training</li>
-
-            <li>Model Comparison</li>
-
-            <li>Best Model Selection</li>
-
-            <li>Flask Web Application</li>
-
-            <li>Loan Prediction</li>
-
-        </ol>
-
-        <br>
-
-        <h2>Team</h2>
-
-        <p>
-
-            <strong>Team Leader:</strong> Vartha Varalakshmi
-
-            <br><br>
-
-            <strong>Team Members:</strong>
-
-            <br>
-
-            • Ramadevi Neelapu
-
-            <br>
-
-            • Valluru Bhavyasri
-
-            <br>
-
-            • Gowthami Mukku
-
-            <br>
-
-            • Shanmukha Konda
-
-        </p>
+        <div class="small-card">🎨 CSS3</div>
 
     </div>
 
-    <footer>
+    <hr>
 
-        <p>
+    <h2>Machine Learning Models</h2>
 
-            Smart Lender © 2026
+    <div class="card-container">
 
-            <br>
+        <div class="model-card">
+            <h3>Decision Tree</h3>
+            <p>Simple and interpretable classification model.</p>
+        </div>
 
-            Developed using Python • Flask • Machine Learning • XGBoost
+        <div class="model-card">
+            <h3>Random Forest</h3>
+            <p>Ensemble learning model with improved prediction accuracy.</p>
+        </div>
 
-        </p>
+        <div class="model-card">
+            <h3>K-Nearest Neighbors (KNN)</h3>
+            <p>Predicts loan status using similarity between applicants.</p>
+        </div>
 
-    </footer>
+        <div class="model-card">
+            <h3>XGBoost ⭐</h3>
+            <p>Best-performing model selected for final loan prediction.</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2>Project Features</h2>
+
+    <ul class="feature-list">
+
+        <li>✔ Loan Approval Prediction</li>
+
+        <li>✔ Data Preprocessing</li>
+
+        <li>✔ Machine Learning Model Comparison</li>
+
+        <li>✔ Best Model Selection</li>
+
+        <li>✔ Real-Time Prediction using Flask</li>
+
+        <li>✔ User-Friendly Interface</li>
+
+    </ul>
+
+    <hr>
+
+    <h2>Developed By</h2>
+
+    <p class="about-text">
+
+        <strong>Team Smart Lender</strong><br><br>
+
+        Varalakshmi Vartha (Team Lead)<br>
+
+        Ramadevi Neelapu<br>
+
+        Valluru Bhavyasri<br>
+
+        Gowthami Mukku<br>
+
+        Shanmukha Konda
+
+    </p>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>© 2026 Smart Lender</p>
+
+    <p>Powered by Flask • Python • Machine Learning • XGBoost</p>
+
+</footer>
 
 </body>
 

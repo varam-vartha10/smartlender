@@ -9,156 +9,211 @@
     <title>Smart Lender | Loan Approval Prediction</title>
 
     <link rel="stylesheet"
-        href="{{ url_for('static', filename='css/style.css') }}">
+          href="{{ url_for('static', filename='css/style.css') }}">
 
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<!-- ===================== NAVBAR ===================== -->
 
-    <nav>
+<nav>
 
-        <div class="logo-section">
+    <div class="logo-section">
 
-            <img src="{{ url_for('static', filename='images/logo.png') }}"
-                 alt="Smart Lender Logo"
-                 class="logo">
+        <img
+            class="logo"
+            src="{{ url_for('static', filename='images/logo.png') }}"
+            alt="Smart Lender Logo">
 
-            <h2>Smart Lender</h2>
+        <h2>Smart Lender</h2>
 
-        </div>
+    </div>
 
-        <ul>
+    <ul>
 
-            <li><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
 
-            <li><a href="/predict">Predict</a></li>
+        <li><a href="/predict">Loan Prediction</a></li>
 
-            <li><a href="/about">About</a></li>
+        <li><a href="/about">About Us</a></li>
 
-        </ul>
+    </ul>
 
-    </nav>
+</nav>
 
-    <!-- ================= HERO SECTION ================= -->
+<!-- ===================== HERO SECTION ===================== -->
 
-    <section class="hero">
+<section class="hero">
 
-        <div class="hero-left">
+    <div class="hero-left">
 
-            <h1>Loan Approval Prediction System</h1>
+        <h1>AI Powered Loan Approval Prediction</h1>
 
-            <p>
+        <p>
 
-                Smart Lender is an Artificial Intelligence and Machine Learning
-                powered web application that predicts whether a loan
-                application is likely to be <strong>Approved</strong> or
-                <strong>Rejected</strong>.
+            Smart Lender is a Machine Learning powered web application
+            developed using Python, Flask and XGBoost.
 
-            </p>
+            It helps banks and financial institutions quickly determine
+            whether a loan application is likely to be Approved or Rejected
+            based on applicant details.
 
-            <br>
+        </p>
+
+        <div class="hero-buttons">
 
             <a href="/predict">
 
-                <button class="btn">
+                <button class="btn-primary">
+
                     Start Prediction
+
                 </button>
 
             </a>
 
         </div>
 
-        <div class="hero-right">
+    </div>
 
-            <img src="{{ url_for('static', filename='images/banner.png') }}"
-                 alt="Loan Banner">
+    <div class="hero-right">
 
-        </div>
+        <img
+            src="{{ url_for('static', filename='images/banner.png') }}"
+            alt="Loan Banner">
 
-    </section>
+    </div>
 
-    <!-- ================= FEATURES ================= -->
+</section>
 
-    <section class="features">
+<!-- ===================== FEATURES ===================== -->
 
-        <div class="card">
+<section class="features">
 
-            <h2>Machine Learning</h2>
+    <div class="card">
 
-            <p>
-
-                Predicts loan approval using trained Machine Learning models.
-
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h2>Best Accuracy</h2>
-
-            <p>
-
-                XGBoost achieved the highest accuracy among all models.
-
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h2>Fast Prediction</h2>
-
-            <p>
-
-                Enter applicant details and receive instant loan approval
-                predictions.
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- ================= MODELS ================= -->
-
-    <section class="models">
-
-        <h2>Algorithms Used</h2>
-
-        <div class="algorithm-box">
-
-            <div>Decision Tree</div>
-
-            <div>Random Forest</div>
-
-            <div>KNN</div>
-
-            <div>XGBoost ⭐</div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
+        <h2>⚡ Fast Prediction</h2>
 
         <p>
 
-            Smart Lender © 2026
+            Instantly predicts loan approval using Machine Learning.
 
         </p>
+
+    </div>
+
+    <div class="card">
+
+        <h2>🎯 High Accuracy</h2>
 
         <p>
 
-            Developed using Flask • Python • Machine Learning • XGBoost
+            Uses the XGBoost algorithm with excellent prediction accuracy.
 
         </p>
 
-    </footer>
+    </div>
+
+    <div class="card">
+
+        <h2>🔒 Secure</h2>
+
+        <p>
+
+            Applicant information is processed securely for prediction.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===================== MODELS ===================== -->
+
+<section class="models">
+
+    <h2>Machine Learning Models Used</h2>
+
+    <div class="model-grid">
+
+        <div class="model-card">
+
+            <h3>Decision Tree</h3>
+
+            <p>Simple and interpretable classification model.</p>
+
+        </div>
+
+        <div class="model-card">
+
+            <h3>Random Forest</h3>
+
+            <p>Ensemble model providing better prediction performance.</p>
+
+        </div>
+
+        <div class="model-card">
+
+            <h3>K-Nearest Neighbors</h3>
+
+            <p>Classifies applicants based on nearest neighbours.</p>
+
+        </div>
+
+        <div class="model-card">
+
+            <h3>XGBoost ⭐</h3>
+
+            <p>Selected as the best performing model for deployment.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== PROJECT INFO ===================== -->
+
+<section class="project-info">
+
+    <h2>Project Highlights</h2>
+
+    <ul>
+
+        <li>✔ Loan Approval Prediction using Machine Learning</li>
+
+        <li>✔ Flask Web Application</li>
+
+        <li>✔ Decision Tree, Random Forest, KNN and XGBoost</li>
+
+        <li>✔ Data Preprocessing and Feature Scaling</li>
+
+        <li>✔ Real-Time Prediction</li>
+
+        <li>✔ User Friendly Interface</li>
+
+    </ul>
+
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 Smart Lender | AI Powered Loan Approval Prediction System
+
+    </p>
+
+    <p>
+
+        Developed using Python • Flask • Scikit-Learn • XGBoost
+
+    </p>
+
+</footer>
 
 </body>
 
