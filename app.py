@@ -1,3 +1,5 @@
+import pandas as pd
+
 from flask import Flask, render_template, request
 
 from utils.model_loader import (
@@ -36,7 +38,6 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-
 # ==========================================
 # About Page
 # ==========================================
@@ -45,7 +46,6 @@ def home():
 def about():
     return render_template("about.html")
 
-
 # ==========================================
 # Prediction Page
 # ==========================================
@@ -53,8 +53,6 @@ def about():
 @app.route("/predict")
 def predict_page():
     return render_template("predict.html")
-
-
 
 # ==========================================
 # Prediction Result
@@ -109,18 +107,35 @@ def result():
         # Prepare Input
         # ==============================
 
-        data = prepare_input(
-            dependents,
-            education,
-            self_employed,
-            income_annum,
-            loan_amount,
-            loan_term,
-            cibil_score,
-            residential_assets,
-            commercial_assets,
-            luxury_assets,
-            bank_assets,
+        columns = [
+            "no_of_dependents",
+            "education",
+            "self_employed",
+            "income_annum",
+            "loan_amount",
+            "loan_term",
+            "cibil_score",
+            "residential_assets_value",
+            "commercial_assets_value",
+            "luxury_assets_value",
+            "bank_asset_value",
+        ]
+
+        data = pd.DataFrame(
+            [[
+                dependents,
+                education,
+                self_employed,
+                income_annum,
+                loan_amount,
+                loan_term,
+                cibil_score,
+                residential_assets,
+                commercial_assets,
+                luxury_assets,
+                bank_assets,
+            ]],
+            columns=columns,
         )
 
         # ==============================
@@ -152,7 +167,6 @@ def result():
             "error.html",
             error=str(e),
         )
-
 
 # ==========================================
 # Run Flask App
